@@ -1,0 +1,23 @@
+#gameCanvas {
+  border: 1px solid black;
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#startButton {
+    position: absolute;
+    top: 100%; /* Coloca el botón justo debajo del canvas */
+    left: 48%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal del botón */
+    transform: translateY(-750%);
+    margin-top: 0px; /* Ajusta esta distancia para separar el botón del canvas */
+}
