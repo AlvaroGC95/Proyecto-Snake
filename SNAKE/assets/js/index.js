@@ -84,8 +84,10 @@ function updateGame() {
     // Finalizar el juego
     clearInterval(gameLoop);
     alert("Game Over! Your score: " + score);
+    location.canvas;
     return;
   }
+  
 
   // Agregar la nueva posición de la cabeza de la serpiente
   snake.unshift(head);
@@ -122,9 +124,10 @@ function drawGame() {
   context.fillRect(food.x, food.y, gridSize, gridSize);
 
   // Mostrar el marcador de puntos
-  context.fillStyle = "#000";
+  context.fillStyle = "#000" ;
   context.font = "20px Arial";
-  context.fillText("Score: " + score, 10, 30);
+  context.border = "50px";
+  context.fillText("Score: " + score, 10, 20);
 }
 
 // Función para verificar si la serpiente colisiona consigo misma
@@ -173,4 +176,7 @@ document.addEventListener("keydown", function(event) {
   ) {
     direction = newDirection;
   }
-});
+}
+
+
+)
