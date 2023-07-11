@@ -1,23 +1,41 @@
 #gameCanvas {
-  border: 1px solid black;
+  border: 4px solid black;
   padding: 0;
   margin: auto;
   display: block;
-  width: 800px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   top: 0; 
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: green;
 }
 
+ body {
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+    );
+  text-align: center;
+  overflow: hidden; /*Hide scrollbars*/
+}
+h1 {
+  font-family: Comic Sans MS;
+}
 
 #startButton {
     position: absolute;
-    top: 100%; /* Coloca el botón justo debajo del canvas */
-    left: 48%; /* Centra el botón horizontalmente */
+    top: 105%; /* Coloca el botón justo debajo del canvas */
+    left: 38%; /* Centra el botón horizontalmente */
     transform: translateX(-50%); /* Ajusta la posición horizontal del botón */
-    transform: translateY(-750%);
+    transform: translateY(-950%);
     margin-top: 0px; /* Ajusta esta distancia para separar el botón del canvas */
+    border-radius: 10px;
+    color: deeppink;
+    background-color: black;
 }
+
